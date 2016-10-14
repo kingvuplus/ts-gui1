@@ -106,7 +106,7 @@ void gRC::submit(const gOpcode &o)
 void *gRC::thread()
 {
 	int need_notify = 0;
-ifdef USE_LIBVUGLES2
+#ifdef USE_LIBVUGLES2
 	if (gles_open()) {
 		gles_state_open();
 		gles_viewport(720, 576, 720 * 4);
